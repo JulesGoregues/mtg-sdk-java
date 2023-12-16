@@ -21,6 +21,7 @@ public class ForeignData implements Serializable {
     private String flavor;
     private String imageUrl;
     private String language;
+    private String type;
     private int multiverseId;
 
     public String getName() {
@@ -61,6 +62,14 @@ public class ForeignData implements Serializable {
 
     public void setLanguage(String language) {
         this.language = language;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public int getMultiverseId() {
